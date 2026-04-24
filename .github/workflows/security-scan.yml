@@ -1,5 +1,9 @@
 name: Black Duck PR Comment Demo
-on: [pull_request]
+on:
+    push:
+      branches: [main, master]
+    pull_request:
+      branches: [main, master]
 
 jobs:
     blackduck-prcomment:
